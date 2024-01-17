@@ -1,0 +1,48 @@
+@use "sass:math";
+
+// インナー幅設定
+// コンテンツのインナー幅（最も共通の幅が多い部分）
+$inner: 768px;
+// ※キュンパス幅ではなくインナーの幅を指す
+
+// 余白
+$padding-pc: 25px;
+$padding-sp: 16px;
+
+////////////////////
+// フォント設定
+////////////////////
+
+$base-font: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo",
+  sans-serif;
+$second-font: "M PLUS Rounded 1c", sans-serif;
+// ※検証ツールでしっかり反映されているか確認する
+
+body {
+  font-family: $base-font;
+}
+
+// フォントウェイト
+$regular: 300;
+$normal: 400;
+$bold: 700;
+
+////////////////////
+// 色の指定
+////////////////////
+
+//色指定（共通性のあるものは出来る限り指定すると良い）
+$black: #111;
+$white: #fff;
+$ofwhite: #feffe0;
+$gray: #707070;
+$darkgray: #333333;
+$bg: #f0f7e3;
+$limegreen: #c2e05f;
+$limegreen2: #85ba1f;
+$green: #00b900;
+$darkgreen: #3f8d09;
+$orange: #ea8e00;
+$orange2: #e78500;
+$red: #d62525;
+$brown: #5a2800;
