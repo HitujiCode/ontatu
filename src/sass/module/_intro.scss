@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.intro {
+}
+
+.intro__inner {
+}
+
+.intro__content {
+  margin-top: rem(30);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: rem(12);
+  width: calc(308 / 390 * 100%);
+  @include mq("md") {
+    display: flex;
+    margin-top: rem(24);
+  }
+}
+
+.intro__img {
+}
+
+.intro__img img {
+  aspect-ratio: 148/148;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

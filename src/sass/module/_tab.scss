@@ -1,0 +1,71 @@
+@use "global" as *;
+
+.tab {
+  margin-top: rem(24);
+}
+
+.tab__head {
+  display: flex;
+  justify-content: center;
+  gap: rem(1);
+  position: relative;
+}
+
+.tab__head-item {
+  flex: 1;
+  padding: rem(6) 0 rem(8);
+  font-size: rem(24);
+  font-weight: $bold;
+  color: $white;
+  line-height: calc(32 / 24);
+  border: 3px solid $limegreen2;
+  border-radius: rem(16) rem(16) 0 0;
+  background-color: $limegreen2;
+  text-align: center;
+  cursor: pointer;
+  @include mq(md) {
+    font-size: rem(20);
+  }
+}
+
+.tab__head::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: rem(6);
+  height: rem(3);
+  background-color: $limegreen2;
+}
+
+.tab__head-item.is-active {
+  color: $limegreen2;
+  background-color: $white;
+  border-bottom: none;
+}
+
+.tab__content {
+  border: 3px solid $limegreen2;
+  border-top: none;
+}
+
+.tab__content-item {
+  padding: rem(25);
+  display: none;
+  background-color: #fff;
+}
+
+.tab__content-item.is-active {
+  display: block;
+  animation: fade 0.3s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

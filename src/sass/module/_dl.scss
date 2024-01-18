@@ -1,0 +1,120 @@
+@use "global" as *;
+
+.dl {
+}
+
+.dl__inner {
+}
+
+.dl__content {
+  max-width: rem(560);
+  margin-inline: auto;
+}
+
+.dl__info-wrap {
+  padding: rem(14) rem(15);
+  border: 3px solid $orange;
+  border-radius: rem(10);
+  display: flex;
+  position: relative;
+}
+
+.dl__info-text {
+  font-size: rem(13);
+  font-weight: $medium;
+  color: $orange2;
+  line-height: calc(20 / 13);
+}
+
+.dl__info-text--bold {
+  @extend .dl__info-text;
+  font-weight: $bold;
+}
+
+.dl__info-text--bold span {
+  width: fit-content;
+  background-color: $offwhite;
+}
+
+.dl__img {
+  width: rem(110);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.dl__img img {
+  aspect-ratio: 199/239;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.dl__title {
+  font-size: rem(20);
+  font-weight: $medium;
+  line-height: calc(32 / 20);
+  margin-top: rem(32);
+  text-align: center;
+  @include mq("md") {
+    margin-top: rem(36);
+  }
+}
+
+.dl__buttons {
+  margin-top: rem(16);
+  display: flex;
+  justify-content: center;
+  gap: rem(6);
+}
+
+.dl__button {
+}
+
+.dl__app {
+  display: inline-block;
+  width: rem(152);
+}
+
+.dl__app img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  aspect-ratio: 152/56;
+}
+
+.dl__google {
+  display: inline-block;
+  width: rem(189);
+}
+
+.dl__google img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  aspect-ratio: 189/56;
+}
+
+.dl__text {
+  margin-top: rem(6);
+  font-size: rem(12);
+  font-weight: $regular;
+  line-height: calc(32 / 12);
+  text-align: center;
+}
+
+.dl__risukero {
+  margin-top: rem(16);
+  margin-inline: auto;
+  width: rem(265);
+  @include mq("md") {
+    margin-top: rem(20);
+  }
+}
+
+.dl__risukero img {
+  aspect-ratio: 265/100;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

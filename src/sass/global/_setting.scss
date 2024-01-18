@@ -13,18 +13,15 @@ $padding-sp: 16px;
 // フォント設定
 ////////////////////
 
-$base-font: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo",
-  sans-serif;
-$second-font: "M PLUS Rounded 1c", sans-serif;
+$base-font: "M PLUS Rounded 1c", sans-serif;
+$second-font: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic",
+  "Meiryo", sans-serif;
 // ※検証ツールでしっかり反映されているか確認する
-
-body {
-  font-family: $base-font;
-}
 
 // フォントウェイト
 $regular: 300;
 $normal: 400;
+$medium: 500;
 $bold: 700;
 
 ////////////////////
@@ -34,7 +31,7 @@ $bold: 700;
 //色指定（共通性のあるものは出来る限り指定すると良い）
 $black: #111;
 $white: #fff;
-$ofwhite: #feffe0;
+$offwhite: #feffe0;
 $gray: #707070;
 $darkgray: #333333;
 $bg: #f0f7e3;
@@ -46,3 +43,8 @@ $orange: #ea8e00;
 $orange2: #e78500;
 $red: #d62525;
 $brown: #5a2800;
+
+body {
+  font-family: $base-font;
+  color: $black;
+}

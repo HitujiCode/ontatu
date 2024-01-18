@@ -19,6 +19,12 @@
     <!-- ファビコン -->
     <link rel="icon" href="" />
     <!-- css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- JavaScript -->
     <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
@@ -27,10 +33,275 @@
   <body>
     <%- include('ejs/header'); %>
     <main>
-      <div class="inner">
-        <p class="test">変更のテスト</p>
-      </div>
+      <section class="mv">
+        <div class="mv__inner inner">
+          <div class="mv__content">
+            <h2 class="mv__title">小学教科書ワーク英語　無料付録アプリ</h2>
+            <div class="mv__title-wrap">
+              <div class="mv__title-img">
+                <img
+                  src="./assets/images/mv-title.svg"
+                  alt="文理のはつおん上達アプリ｜おん達"
+                  width=""
+                  height=""
+                />
+              </div>
+              <div class="mv__risukero">
+                <img
+                  src="./assets/images/mv-risukero.svg"
+                  alt="リスとカエルのイラスト"
+                  width=""
+                  height=""
+                />
+              </div>
+            </div>
+            <p class="mv__read">
+              英語の発音をAIが採点！<br class="u-mobile" />
+              発音がどんどん上手に！
+            </p>
+            <div class="mv__bottom-wrap">
+              <div class="mv__img">
+                <img
+                  src="./assets/images/mv-img@2x.webp"
+                  alt="小学教科書ワーク｜英語"
+                  width=""
+                  height=""
+                />
+              </div>
+              <div class="mv__text-wrap">
+                <p class="mv__text">
+                  『小学教科書ワーク 英語』の<br /><span class="mv__keyword"
+                    >わくわく英語カード</span
+                  >と<span class="mv__keyword--large"
+                    >「重要表現まるっと整理」</span
+                  ><br />に対応しています
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="dl l-dl">
+        <div class="dl__inner inner">
+          <div class="dl__content">
+            <div class="dl__info-wrap">
+              <div class="dl__info">
+                <p class="dl__info-text">
+                  小学教科書ワーク 4 科目セット付録<br
+                    class="u-mobile"
+                  />わくわく英語ドリルよりお越しの方も、<br />
+                </p>
+                <p class="dl__info-text--bold">
+                  <span
+                    >インストール方法や使い方は<br
+                      class="u-mobile"
+                    />製品版と同様になります。</span
+                  >
+                </p>
+              </div>
+              <div class="dl__img">
+                <img
+                  src="./assets/images/drill@2x.webp"
+                  alt="英語ドリルのイラスト"
+                  width=""
+                  height=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <h2 class="dl__title">インストールはこちら</h2>
+            <div class="dl__buttons">
+              <div class="dl__button">
+                <a
+                  class="dl__app"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img
+                    src="./assets/images/dl-app@2x.webp"
+                    alt="AppStoreからダウンロード"
+                    width=""
+                    height=""
+                    loading="lazy"
+                /></a>
+                <p class="dl__text">iPhone/iPadはこちらから</p>
+              </div>
+              <div class="dl__button">
+                <a
+                  class="dl__google"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img
+                    src="./assets/images/dl-google@2x.webp"
+                    alt="GooglePlayで手に入れよう"
+                    width=""
+                    height=""
+                    loading="lazy"
+                /></a>
+                <p class="dl__text">Androidスマホはこちらから</p>
+              </div>
+            </div>
+            <div class="dl__risukero">
+              <img
+                src="./assets/images/risukero1.svg"
+                alt="リスとカエルのイラスト"
+                width=""
+                height=""
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="intro l-intro">
+        <h2 class="intro__head section-head">おん達のここがすごい！</h2>
+        <div class="intro__inner inner">
+          <div class="intro__content">
+            <div class="intro__img">
+              <img
+                src="./assets/images/intro_1@2x.webp"
+                alt="ネイティブによるお手本"
+                width=""
+                height=""
+                loading="lazy"
+              />
+            </div>
+            <div class="intro__img">
+              <img
+                src="./assets/images/intro_2@2x.webp"
+                alt="単語も会話フレーズも"
+                width=""
+                height=""
+                loading="lazy"
+              />
+            </div>
+            <div class="intro__img">
+              <img
+                src="./assets/images/intro_3@2x.webp"
+                alt="一連の会話を通して練習"
+                width=""
+                height=""
+                loading="lazy"
+              />
+            </div>
+            <div class="intro__img">
+              <img
+                src="./assets/images/intro_4@2x.webp"
+                alt="発音をAIが採点！"
+                width=""
+                height=""
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="usage l-usage">
+        <h2 class="usage__head section-head">アプリの使い方</h2>
+        <div class="usage__inner inner">
+          <div class="tab">
+            <ul class="tab__head">
+              <li
+                class="tab__head-item js-tab-head is-active"
+                data-number="tab01"
+              >
+                iOS版
+              </li>
+              <li
+                class="tab__head-item js-tab-head is-active"
+                data-number="tab02"
+              >
+                Android版
+              </li>
+            </ul>
+            <ul class="tab__content js-tab-content is-active">
+              <li class="tab__content-item is-active">
+                <div class="tab__index">
+                  <ul class="tab__menu">
+                    <li class="tab__menu-item">
+                      <a href="#">初めて使うとき</a>
+                    </li>
+                    <li class="tab__menu-item"><a href="#">たんご</a></li>
+                    <li class="tab__menu-item"><a href="#">かいわ</a></li>
+                    <li class="tab__menu-item"><a href="#">とっくん</a></li>
+                    <li class="tab__menu-item">
+                      <a href="#">学年のきりかえ</a>
+                    </li>
+                    <li class="tab__menu-item"><a href="#">履歴の削除</a></li>
+                  </ul>
+                  <div class="tab__menu-img">
+                    <img
+                      src="./assets/images/risukero2.svg"
+                      alt="リスとカエルのイラスト"
+                      width=""
+                      height=""
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <ul class="tab__flow">
+                  <li
+                    id="tab01"
+                    class="tab__flow-section js-tab-flow is-active"
+                  >
+                    <h3 class="tab__flow-title">初めて使うとき</h3>
+                    <div class="tab__flow-body">
+                      <div class="tab__flow-img">
+                        <img
+                          src="./assets/images/ios_1@2x.webp"
+                          alt="ログイン画面の画像"
+                          width=""
+                          height=""
+                          loading="lazy"
+                        />
+                      </div>
+                      <p class="tab__flow-text flow-text">
+                        アプリを起動するとログイン画面になります。<br />
+                        「アクセスコード★」を入力し、ログインしてください。<br />
+                        ログイン後、画面下部のメニューから練習に進めます。
+                      </p>
+                      <div class="tab__flow-img-small">
+                        <img
+                          src="./assets/images/ios_2@2x.webp"
+                          alt="メニュー部分の画像"
+                          width=""
+                          height=""
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="tab__flow-info">
+                        <p class="tab__flow-info-title">
+                          ★アクセスコードとは？
+                        </p>
+                        <p class="tab__flow-info-text flow-text">
+                          「小学教科書ワーク
+                          英語」に記載されている8桁の英数字です。<br />以下のいずれかをご確認ください。<br />
+                          ①「この本のくわしい使い方」４ページ<br />
+                          ②「重要表現まるっと整理」の扉ページ
+                        </p>
+                        <p class="tab__flow-info-text flow-text--small">
+                          ※わくわく英語ドリルに付属する体験版のアクセスコードは、同ドリルの１ページに記載されています。
+                        </p>
+                      </div>
+                      <div class="tab__flow-illust">
+                        <img
+                          src="./assets/images/risukero3.svg"
+                          alt="リスとカエルのイラスト"
+                          width=""
+                          height=""
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <%- include('ejs/footer'); %>
   </body>
 </html>

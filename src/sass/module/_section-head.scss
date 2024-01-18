@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.section-head {
+  text-align: center;
+  font-size: rem(24);
+  font-weight: $bold;
+  color: $white;
+  line-height: calc(32 / 24);
+  background-color: $orange;
+  padding: rem(10) rem(20);
+}
