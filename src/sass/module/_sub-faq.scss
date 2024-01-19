@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.sup-faq {
+  margin-top: rem(30);
+}
+
+.sup-faq__head {
+}
+
+.sup-faq__inner {
+  padding: 0 rem(16);
+  margin-inline: auto;
+  max-width: rem(560);
+}

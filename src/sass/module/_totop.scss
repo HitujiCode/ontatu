@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.totop {
+  position: fixed;
+  bottom: rem(10);
+  right: rem(5);
+  z-index: 1000;
+  @include mq("md") {
+    bottom: rem(40);
+    right: rem(40);
+  }
+}

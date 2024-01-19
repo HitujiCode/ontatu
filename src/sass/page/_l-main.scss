@@ -1,0 +1,7 @@
+@use "global" as *;
+
+.l-main {
+  max-width: rem(768);
+  margin-inline: auto;
+  background-color: $white;
+}

@@ -1,0 +1,73 @@
+@use "global" as *;
+
+.sup-info {
+}
+
+.sup-info__head {
+}
+
+.section-head {
+}
+
+.sup-info__inner {
+  padding: 0 rem(16);
+  max-width: rem(592);
+  margin-inline: auto;
+}
+
+.sub-info__wrapper {
+  margin-top: rem(40);
+}
+
+.sub-info__content {
+  padding: rem(16) rem(10);
+  border: 1px solid $gray;
+  height: rem(198);
+  // height: auto;
+  overflow: hidden;
+  overflow-y: scroll;
+  font-family: $third-font;
+  @include mq("md") {
+    height: rem(300);
+  }
+}
+
+.sub-info__date {
+  text-align: right;
+  font-size: rem(17);
+  font-weight: $regular;
+}
+
+.sub-info__title {
+  margin-top: rem(8);
+  text-align: center;
+  font-size: rem(18);
+  font-weight: $medium;
+}
+
+.sub-info__title span {
+  display: block;
+}
+
+.sub-info__items {
+  margin-top: rem(20);
+  font-weight: $medium;
+  line-height: calc(22 / 12);
+}
+
+.sub-info__item {
+}
+
+.sub-info__term {
+  padding-left: rem(4);
+}
+
+.sub-info__description {
+  word-break: break-all;
+}
+
+.sub-info__description-numbers {
+  list-style: auto;
+  padding: 0 rem(16);
+  text-align: justify;
+}

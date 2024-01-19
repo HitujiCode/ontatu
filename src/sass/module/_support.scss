@@ -1,0 +1,46 @@
+@use "global" as *;
+
+.support {
+}
+
+.support__inner {
+}
+
+.support__content {
+}
+
+.support__buttons {
+  display: grid;
+  gap: rem(24);
+  @include mq("md") {
+    display: flex;
+  }
+}
+
+.support__button {
+  flex: 1;
+}
+
+.support__dl {
+  margin-top: rem(40);
+  border: 3px solid $orange;
+  padding: rem(21);
+  @include mq("md") {
+    max-width: rem(358);
+    margin-inline: auto;
+  }
+}
+
+.support__dl-img {
+}
+
+.support__dl-img img {
+  aspect-ratio: 309/151;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.support__dl-buttons {
+  margin-top: rem(12);
+}

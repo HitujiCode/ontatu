@@ -63,44 +63,6 @@
 
 .dl__buttons {
   margin-top: rem(16);
-  display: flex;
-  justify-content: center;
-  gap: rem(6);
-}
-
-.dl__button {
-}
-
-.dl__app {
-  display: inline-block;
-  width: rem(152);
-}
-
-.dl__app img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  aspect-ratio: 152/56;
-}
-
-.dl__google {
-  display: inline-block;
-  width: rem(189);
-}
-
-.dl__google img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  aspect-ratio: 189/56;
-}
-
-.dl__text {
-  margin-top: rem(6);
-  font-size: rem(12);
-  font-weight: $regular;
-  line-height: calc(32 / 12);
-  text-align: center;
 }
 
 .dl__risukero {

@@ -16,6 +16,7 @@ $padding-sp: 16px;
 $base-font: "M PLUS Rounded 1c", sans-serif;
 $second-font: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic",
   "Meiryo", sans-serif;
+$third-font: "Noto Sans JP", sans-serif;
 // ※検証ツールでしっかり反映されているか確認する
 
 // フォントウェイト
@@ -41,10 +42,12 @@ $green: #00b900;
 $darkgreen: #3f8d09;
 $orange: #ea8e00;
 $orange2: #e78500;
+$orangeshadow: #cb7b00;
 $red: #d62525;
 $brown: #5a2800;
 
 body {
   font-family: $base-font;
   color: $black;
+  background-color: $bg;
 }

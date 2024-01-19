@@ -32,9 +32,9 @@
   </head>
   <body>
     <%- include('ejs/header'); %>
-    <main>
+    <main class="l-main">
       <section class="mv">
-        <div class="mv__inner inner">
+        <div class="mv__inner">
           <div class="mv__content">
             <h2 class="mv__title">小学教科書ワーク英語　無料付録アプリ</h2>
             <div class="mv__title-wrap">
@@ -82,7 +82,7 @@
         </div>
       </section>
       <section class="dl l-dl">
-        <div class="dl__inner inner">
+        <div class="dl__inner">
           <div class="dl__content">
             <div class="dl__info-wrap">
               <div class="dl__info">
@@ -110,11 +110,11 @@
               </div>
             </div>
             <h2 class="dl__title">インストールはこちら</h2>
-            <div class="dl__buttons">
-              <div class="dl__button">
+            <div class="dl__buttons dl-buttons">
+              <div class="dl-buttons__button">
                 <a
-                  class="dl__app"
                   href=""
+                  class="dl-buttons__app"
                   target="_blank"
                   rel="noopener noreferrer"
                   ><img
@@ -124,12 +124,12 @@
                     height=""
                     loading="lazy"
                 /></a>
-                <p class="dl__text">iPhone/iPadはこちらから</p>
+                <p class="dl-buttons__text">iPhone/iPadはこちらから</p>
               </div>
-              <div class="dl__button">
+              <div class="dl-buttons__button">
                 <a
-                  class="dl__google"
                   href=""
+                  class="dl-buttons__google"
                   target="_blank"
                   rel="noopener noreferrer"
                   ><img
@@ -139,24 +139,24 @@
                     height=""
                     loading="lazy"
                 /></a>
-                <p class="dl__text">Androidスマホはこちらから</p>
+                <p class="dl-buttons__text">Androidスマホはこちらから</p>
               </div>
             </div>
-            <div class="dl__risukero">
-              <img
-                src="./assets/images/risukero1.svg"
-                alt="リスとカエルのイラスト"
-                width=""
-                height=""
-                loading="lazy"
-              />
-            </div>
+          </div>
+          <div class="dl__risukero">
+            <img
+              src="./assets/images/risukero1.svg"
+              alt="リスとカエルのイラスト"
+              width=""
+              height=""
+              loading="lazy"
+            />
           </div>
         </div>
       </section>
       <section class="intro l-intro">
         <h2 class="intro__head section-head">おん達のここがすごい！</h2>
-        <div class="intro__inner inner">
+        <div class="intro__inner">
           <div class="intro__content">
             <div class="intro__img">
               <img
@@ -199,7 +199,7 @@
       </section>
       <section class="usage l-usage">
         <h2 class="usage__head section-head">アプリの使い方</h2>
-        <div class="usage__inner inner">
+        <div class="usage__inner">
           <div class="tab">
             <ul class="tab__head">
               <li
@@ -208,46 +208,46 @@
               >
                 iOS版
               </li>
-              <li
-                class="tab__head-item js-tab-head is-active"
-                data-number="tab02"
-              >
+              <li class="tab__head-item js-tab-head" data-number="tab02">
                 Android版
               </li>
             </ul>
-            <ul class="tab__content js-tab-content is-active">
-              <li class="tab__content-item is-active">
+            <ul class="tab__content">
+              <li
+                id="tab01"
+                class="tab__content-item js-tab-content-item is-active"
+              >
                 <div class="tab__index">
-                  <ul class="tab__menu">
-                    <li class="tab__menu-item">
-                      <a href="#">初めて使うとき</a>
-                    </li>
-                    <li class="tab__menu-item"><a href="#">たんご</a></li>
-                    <li class="tab__menu-item"><a href="#">かいわ</a></li>
-                    <li class="tab__menu-item"><a href="#">とっくん</a></li>
-                    <li class="tab__menu-item">
-                      <a href="#">学年のきりかえ</a>
-                    </li>
-                    <li class="tab__menu-item"><a href="#">履歴の削除</a></li>
-                  </ul>
-                  <div class="tab__menu-img">
-                    <img
-                      src="./assets/images/risukero2.svg"
-                      alt="リスとカエルのイラスト"
-                      width=""
-                      height=""
-                      loading="lazy"
-                    />
+                  <p class="tab__index-head">index</p>
+                  <div class="tab__menu-wrap">
+                    <ul class="tab__menu">
+                      <li class="tab__menu-item">
+                        <a href="#">初めて使うとき</a>
+                      </li>
+                      <li class="tab__menu-item"><a href="#">たんご</a></li>
+                      <li class="tab__menu-item"><a href="#">かいわ</a></li>
+                      <li class="tab__menu-item"><a href="#">とっくん</a></li>
+                      <li class="tab__menu-item">
+                        <a href="#">学年のきりかえ</a>
+                      </li>
+                      <li class="tab__menu-item"><a href="#">履歴の削除</a></li>
+                    </ul>
+                    <div class="tab__menu-img">
+                      <img
+                        src="./assets/images/risukero2.svg"
+                        alt="リスとカエルのイラスト"
+                        width=""
+                        height=""
+                        loading="lazy"
+                      />
+                    </div>
                   </div>
                 </div>
                 <ul class="tab__flow">
-                  <li
-                    id="tab01"
-                    class="tab__flow-section js-tab-flow is-active"
-                  >
+                  <li id="ios01" class="tab__flow-section">
                     <h3 class="tab__flow-title">初めて使うとき</h3>
                     <div class="tab__flow-body">
-                      <div class="tab__flow-img">
+                      <div class="tab__flow-img1">
                         <img
                           src="./assets/images/ios_1@2x.webp"
                           alt="ログイン画面の画像"
@@ -256,12 +256,12 @@
                           loading="lazy"
                         />
                       </div>
-                      <p class="tab__flow-text flow-text">
+                      <p class="tab__flow-text-left flow-text">
                         アプリを起動するとログイン画面になります。<br />
-                        「アクセスコード★」を入力し、ログインしてください。<br />
+                        「アクセスコード<span>★</span>」を入力し、ログインしてください。<br />
                         ログイン後、画面下部のメニューから練習に進めます。
                       </p>
-                      <div class="tab__flow-img-small">
+                      <div class="tab__flow-img2">
                         <img
                           src="./assets/images/ios_2@2x.webp"
                           alt="メニュー部分の画像"
@@ -295,13 +295,484 @@
                       </div>
                     </div>
                   </li>
+                  <li id="ios02" class="tab__flow-section">
+                    <h3 class="tab__flow-title">たんご</h3>
+                    <div class="tab__flow-body">
+                      <p class="tab__flow-text flow-text">
+                        教科書ワーク付録カードの英単語が登場します。
+                      </p>
+                      <h4 class="tab__flow-head flow-text--white">
+                        トレーニング
+                      </h4>
+                      <div class="tab__flow-img3">
+                        <img
+                          src="./assets/images/ios_3@2x.webp"
+                          alt="練習画面の画像"
+                          width=""
+                          height=""
+                          loading="lazy"
+                        />
+                      </div>
+                      <h4 class="tab__flow-head flow-text--white">
+                        チャレンジ
+                      </h4>
+                      <div class="tab__flow-img3">
+                        <img
+                          src="./assets/images/ios_4@2x.webp"
+                          alt="練習画面の画像"
+                          width=""
+                          height=""
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </li>
+                  <li id="ios03" class="tab__flow-section">
+                    <h3 class="tab__flow-title">かいわ</h3>
+                    <div class="tab__flow-body">
+                      <p class="tab__flow-text-top flow-text">
+                        教科書ワーク「重要表現まるっと整理」の<br
+                          class="u-mobile"
+                        />会話表現の練習ができます。
+                      </p>
+                      <h4 class="tab__flow-head flow-text--white">
+                        トレーニング
+                      </h4>
+                      <div class="tab__flow-img3">
+                        <img
+                          src="./assets/images/ios_3@2x.webp"
+                          alt="練習画面の画像"
+                          width=""
+                          height=""
+                          loading="lazy"
+                        />
+                      </div>
+                      <h4 class="tab__flow-head flow-text--white">
+                        チャレンジ
+                      </h4>
+                      <div class="tab__flow-img3">
+                        <img
+                          src="./assets/images/ios_5@2x.webp"
+                          alt="練習画面の画像"
+                          width=""
+                          height=""
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </li>
+                  <li id="ios04" class="tab__flow-section">
+                    <h3 class="tab__flow-title">とっくん</h3>
+                    <div class="tab__flow-body">
+                      <p class="tab__flow-text flow-text">
+                        「かいわ」の内容をまとめて練習できます。<br />
+                        あなたの発音がどう聞こえたのかが表示され、<br />
+                        じっくり練習することができます。
+                      </p>
+                      <div class="tab__flow-img5">
+                        <img
+                          src="./assets/images/ios_6@2x.webp"
+                          alt="練習画面の画像"
+                          width=""
+                          height=""
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="tab__flow-illust">
+                        <img
+                          src="./assets/images/risukero4.svg"
+                          alt="リスとカエルのイラスト"
+                          width=""
+                          height=""
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </li>
+                  <li id="ios05" class="tab__flow-section">
+                    <h3 class="tab__flow-title">学年のきりかえ</h3>
+                    <div class="tab__flow-body">
+                      <div class="tab__flow-img6">
+                        <img
+                          src="./assets/images/ios_7@2x.webp"
+                          alt="ホーム画面の画像"
+                          width=""
+                          height=""
+                          loading="lazy"
+                        />
+                      </div>
+                      <p class="tab__flow-text flow-text">
+                        ホームの「学年変更」をタップし、<br />
+                        ログイン画面で別のアクセスコードを<br
+                          class="u-mobile"
+                        />入力します。
+                      </p>
+                      <p class="tab__flow-text--middle flow-text">
+                        一度アクセスコードを入力したことがあれば、<br />
+                        タイトル下の表紙画像のロックが外れています。<br />取り組みたい学年の表紙画像を<br
+                          class="u-mobile"
+                        />
+                        タップしてください。
+                      </p>
+                      <div class="tab__flow-info">
+                        <p class="tab__flow-info-title">★有効期限について</p>
+                        <p class="tab__flow-info-text flow-text">
+                          本アプリはアクセスコードを入力してから15か月間ご利用いただけます。
+                        </p>
+                        <p class="tab__flow-info-text flow-text--small">
+                          ※わくわく英語ドリルに付属する体験版については、アクセスコード入力時から3か月間になります。
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li id="ios06" class="tab__flow-section">
+                    <h3 class="tab__flow-title">履歴の削除</h3>
+                    <div class="tab__flow-body">
+                      <div class="tab__flow-img7">
+                        <img
+                          src="./assets/images/ios_8@2x.webp"
+                          alt="ホーム画面の画像"
+                          width=""
+                          height=""
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li id="tab02" class="tab__content-item js-tab-content-item">
+                <div class="tab__index">
+                  <p class="tab__index-head">index</p>
+                  <div class="tab__menu-wrap">
+                    <ul class="tab__menu">
+                      <li class="tab__menu-item">
+                        <a href="#">初めて使うとき</a>
+                      </li>
+                      <li class="tab__menu-item"><a href="#">たんご</a></li>
+                      <li class="tab__menu-item"><a href="#">かいわ</a></li>
+                      <li class="tab__menu-item"><a href="#">とっくん</a></li>
+                      <li class="tab__menu-item">
+                        <a href="#">学年のきりかえ</a>
+                      </li>
+                      <li class="tab__menu-item"><a href="#">履歴の削除</a></li>
+                    </ul>
+                    <div class="tab__menu-img">
+                      <img
+                        src="./assets/images/risukero2.svg"
+                        alt="リスとカエルのイラスト"
+                        width=""
+                        height=""
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <ul class="tab__flow">
+                  <li id="android01" class="tab__flow-section">
+                    <h3 class="tab__flow-title">初めて使うとき</h3>
+                    <div class="tab__flow-body">
+                      <div class="tab__flow-img1">
+                        <img
+                          src="./assets/images/android_1@2x.webp"
+                          alt="ログイン画面の画像"
+                          width=""
+                          height=""
+                          loading="lazy"
+                        />
+                      </div>
+                      <p class="tab__flow-text-left flow-text">
+                        アプリを起動するとログイン画面になります。<br />
+                        「アクセスコード<span>★</span>」を入力し、ログインしてください。<br />
+                        ログイン後、画面下部のメニューから練習に進めます。
+                      </p>
+                      <div class="tab__flow-img2">
+                        <img
+                          src="./assets/images/android_2@2x.webp"
+                          alt="メニュー部分の画像"
+                          width=""
+                          height=""
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="tab__flow-info">
+                        <p class="tab__flow-info-title">
+                          ★アクセスコードとは？
+                        </p>
+                        <p class="tab__flow-info-text flow-text">
+                          「小学教科書ワーク
+                          英語」に記載されている8桁の英数字です。<br />以下のいずれかをご確認ください。<br />
+                          ①「この本のくわしい使い方」４ページ<br />
+                          ②「重要表現まるっと整理」の扉ページ
+                        </p>
+                        <p class="tab__flow-info-text flow-text--small">
+                          ※わくわく英語ドリルに付属する体験版のアクセスコードは、同ドリルの１ページに記載されています。
+                        </p>
+                      </div>
+                      <div class="tab__flow-illust">
+                        <img
+                          src="./assets/images/risukero3.svg"
+                          alt="リスとカエルのイラスト"
+                          width=""
+                          height=""
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </li>
+                  <li id="android02" class="tab__flow-section">
+                    <h3 class="tab__flow-title">たんご</h3>
+                    <div class="tab__flow-body">
+                      <p class="tab__flow-text flow-text">
+                        教科書ワーク付録カードの英単語が登場します。
+                      </p>
+                      <h4 class="tab__flow-head flow-text--white">
+                        トレーニング
+                      </h4>
+                      <div class="tab__flow-img3">
+                        <img
+                          src="./assets/images/android_3@2x.webp"
+                          alt="練習画面の画像"
+                          width=""
+                          height=""
+                          loading="lazy"
+                        />
+                      </div>
+                      <h4 class="tab__flow-head flow-text--white">
+                        チャレンジ
+                      </h4>
+                      <div class="tab__flow-img3">
+                        <img
+                          src="./assets/images/android_4@2x.webp"
+                          alt="練習画面の画像"
+                          width=""
+                          height=""
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </li>
+                  <li id="android03" class="tab__flow-section">
+                    <h3 class="tab__flow-title">かいわ</h3>
+                    <div class="tab__flow-body">
+                      <p class="tab__flow-text-top flow-text">
+                        教科書ワーク「重要表現まるっと整理」の<br
+                          class="u-mobile"
+                        />会話表現の練習ができます。
+                      </p>
+                      <h4 class="tab__flow-head flow-text--white">
+                        トレーニング
+                      </h4>
+                      <div class="tab__flow-img3">
+                        <img
+                          src="./assets/images/android_3@2x.webp"
+                          alt="練習画面の画像"
+                          width=""
+                          height=""
+                          loading="lazy"
+                        />
+                      </div>
+                      <h4 class="tab__flow-head flow-text--white">
+                        チャレンジ
+                      </h4>
+                      <div class="tab__flow-img3">
+                        <img
+                          src="./assets/images/android_5@2x.webp"
+                          alt="練習画面の画像"
+                          width=""
+                          height=""
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </li>
+                  <li id="android04" class="tab__flow-section">
+                    <h3 class="tab__flow-title">とっくん</h3>
+                    <div class="tab__flow-body">
+                      <p class="tab__flow-text flow-text">
+                        「かいわ」の内容をまとめて練習できます。<br />
+                        あなたの発音がどう聞こえたのかが表示され、<br />
+                        じっくり練習することができます。
+                      </p>
+                      <div class="tab__flow-img5">
+                        <img
+                          src="./assets/images/android_7@2x.webp"
+                          alt="練習画面の画像"
+                          width=""
+                          height=""
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="tab__flow-illust">
+                        <img
+                          src="./assets/images/risukero4.svg"
+                          alt="リスとカエルのイラスト"
+                          width=""
+                          height=""
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </li>
+                  <li id="android05" class="tab__flow-section">
+                    <h3 class="tab__flow-title">学年のきりかえ</h3>
+                    <div class="tab__flow-body">
+                      <div class="tab__flow-img6">
+                        <img
+                          src="./assets/images/android_7@2x.webp"
+                          alt="ホーム画面の画像"
+                          width=""
+                          height=""
+                          loading="lazy"
+                        />
+                      </div>
+                      <p class="tab__flow-text flow-text">
+                        ホームの「学年変更」をタップし、<br />
+                        ログイン画面で別のアクセスコードを<br />入力します。
+                      </p>
+                      <p class="tab__flow-text--middle flow-text">
+                        一度アクセスコードを入力したことがあれば、<br />
+                        タイトル下の表紙画像のロックが外れています。<br />取り組みたい学年の表紙画像を<br />
+                        タップしてください。
+                      </p>
+                      <div class="tab__flow-info">
+                        <p class="tab__flow-info-title">★有効期限について</p>
+                        <p class="tab__flow-info-text flow-text">
+                          本アプリはアクセスコードを入力してから15か月間ご利用いただけます。
+                        </p>
+                        <p class="tab__flow-info-text flow-text--small">
+                          ※わくわく英語ドリルに付属する体験版については、アクセスコード入力時から3か月間になります。
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li id="android06" class="tab__flow-section">
+                    <h3 class="tab__flow-title">履歴の削除</h3>
+                    <div class="tab__flow-body">
+                      <div class="tab__flow-img7">
+                        <img
+                          src="./assets/images/android_8@2x.webp"
+                          alt="ホーム画面の画像"
+                          width=""
+                          height=""
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </li>
                 </ul>
               </li>
             </ul>
           </div>
         </div>
       </section>
+      <div class="support l-support">
+        <div class="support__inner">
+          <div class="support__content">
+            <div class="support__buttons">
+              <div class="support__button">
+                <a href="" class="support-button"><span>利用規約</span></a>
+              </div>
+              <div class="support__button">
+                <a href="" class="support-button"><span>よくある質問</span></a>
+              </div>
+            </div>
+            <div class="support__dl">
+              <div class="support__dl-img">
+                <img
+                  src="./assets/images/dl-img@2x.webp"
+                  alt="おん達｜文理のはつおん上達アプリ"
+                  width=""
+                  height=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="support__dl-buttons dl-buttons--small">
+                <div class="dl-buttons__button">
+                  <a
+                    href=""
+                    class="dl-buttons__app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><img
+                      src="./assets/images/dl-app@2x.webp"
+                      alt="AppStoreからダウンロード"
+                      width=""
+                      height=""
+                      loading="lazy"
+                  /></a>
+                  <p class="dl-buttons__text">iPhone/iPadはこちらから</p>
+                </div>
+                <div class="dl-buttons__button">
+                  <a
+                    href=""
+                    class="dl-buttons__google"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><img
+                      src="./assets/images/dl-google@2x.webp"
+                      alt="GooglePlayで手に入れよう"
+                      width=""
+                      height=""
+                      loading="lazy"
+                  /></a>
+                  <p class="dl-buttons__text">Androidスマホはこちらから</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info">
+        <div class="info__inner">
+          <div class="info__content">
+            <div class="info__info">
+              <p class="info__info-head">注意</p>
+              <div class="info__info-body">
+                <p class="info__info-text">
+                  Androidの方はGoogleアカウント、iPhoneの方はApple
+                  IDが必要です。<br />
+                  ios11以上 / Android8.0以上を推奨環境とします。<br />
+                  （最新の対応OSや対応機種については、各ストアでご確認ください。）<br />
+                  お客様のネット環境および携帯端末により、アプリをご利用いただけない場合があります。<br />
+                  ご理解、ご了承いただきますよう、お願いいたします。<br />
+                  タブレットなどの一部の端末では画面表示がくずれることがあります。<br />
+                  本アプリは無料ですが、別途各通信会社の通信料がかかります。<br />
+                  本サービスは予告なく内容を変更することや、終了することがあります。
+                </p>
+              </div>
+            </div>
+            <div class="info__nav">
+              <ul class="info__nav-list">
+                <li class="info__nav-item">
+                  <a href="">おん達のここがすごい</a>
+                </li>
+                <li class="info__nav-item">
+                  <a href="">アプリの使い方</a>
+                </li>
+                <li class="info__nav-item">
+                  <a href="">利用規約</a>
+                </li>
+                <li class="info__nav-item">
+                  <a href="">よくある質問</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
+    <div class="totop js-totop">
+      <button>
+        <img
+          src="./assets/images/totop.svg"
+          alt="トップへ戻る"
+          width=""
+          height=""
+          loading="lazy"
+        />
+      </button>
+    </div>
     <%- include('ejs/footer'); %>
   </body>
 </html>
