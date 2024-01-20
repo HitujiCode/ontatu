@@ -1,0 +1,64 @@
+@use "global" as *;
+
+.sub-contact {
+}
+
+.sub-contact__inner.inner {
+}
+
+.sub-contact__content {
+  text-align: center;
+}
+
+.sub-contact__head {
+  font-size: rem(24);
+  font-weight: $bold;
+  color: $darkgreen;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: rem(2);
+}
+
+.sub-contact__head::before,
+.sub-contact__head::after {
+  content: "";
+  display: block;
+  width: rem(20);
+  height: rem(3);
+  border-radius: rem(2);
+  background-color: $darkgreen;
+}
+
+.sub-contact__head::before {
+  left: 0;
+}
+
+.sub-contact__head::after {
+  right: 0;
+}
+
+.sub-contact__text {
+  margin-top: rem(20);
+  font-size: rem(16);
+  font-weight: $regular;
+  line-height: calc(24 / 16);
+}
+
+.sub-contact__text--small {
+  @extend .sub-contact__text;
+  margin-top: rem(12);
+  font-size: rem(14);
+}
+
+.sub-contact__button {
+  margin-top: rem(12);
+}
+
+.sub-contact__dl {
+  margin-top: rem(60);
+  @include mq("md") {
+    margin-top: rem(88);
+    margin-inline: auto;
+  }
+}

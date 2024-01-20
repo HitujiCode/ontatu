@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .info__inner {
-  padding: 0 rem(25);
+  // padding: 0 rem(25);
   margin-inline: auto;
   @include mq("md") {
     max-width: rem(610);

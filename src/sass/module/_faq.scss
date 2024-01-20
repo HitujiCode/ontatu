@@ -8,6 +8,9 @@
   border: 2px solid $orange;
   border-radius: rem(12);
   padding: rem(20) rem(24);
+  @include mq("md") {
+    padding: rem(28) rem(38);
+  }
 }
 
 .faq-list__item:not(:first-child) {
@@ -19,6 +22,11 @@
   font-size: rem(18);
   font-weight: $regular;
   line-height: calc(27 / 18);
+  text-align: justify;
+  @include mq("md") {
+    font-size: rem(16);
+    line-height: calc(23 / 16);
+  }
 }
 
 .faq-list__item-question {
@@ -27,10 +35,6 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  @include mq(md) {
-    padding: rem(14) rem(60) rem(14) rem(80);
-    font-size: rem(18);
-  }
 }
 
 .faq-list__item-question::before,
@@ -60,10 +64,9 @@
 .faq-list__item-answer {
   margin-top: rem(8);
   display: none;
-  // padding-top: rem(8);
   border-top: 1px solid $orange;
   @include mq(md) {
-    padding: rem(20) rem(40) rem(15) rem(80);
+    margin-top: rem(6);
   }
 }
 
@@ -79,13 +82,18 @@
 
 .faq-list__item-text {
   margin-top: rem(10);
-  // text-align: justify;
+  @include mq("md") {
+    margin-top: rem(20);
+  }
 }
 
 .faq-list__item-img {
   max-width: rem(180);
   margin-top: rem(10);
   margin-inline: auto;
+  @include mq("md") {
+    margin-top: rem(24);
+  }
 }
 
 .faq-list__item-img img {

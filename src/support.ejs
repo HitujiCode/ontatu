@@ -89,9 +89,9 @@
         </div>
       </section>
 
-      <section class="sup-info">
+      <section id="info" class="sup-info">
         <h2 class="sup-info__head section-head">利用規約</h2>
-        <div class="sup-info__inner">
+        <div class="sup-info__inner inner">
           <div class="sub-info__wrapper">
             <div class="sub-info__content">
               <p class="sub-info__date">令和6年3月1日</p>
@@ -127,7 +127,7 @@
                           <ol class="sub-info__description-numbers">
                             <li class="sub-info__description-number">
                               当社は以下の場合に、当社の裁量により、本規約を変更することができます。
-                              <ol class="sub-info__description-numbers">
+                              <ol class="sub-info__description-numbers--inside">
                                 <li class="sub-info__description-number">
                                   本規約の変更が、利用者の一般の利益に適合するとき。
                                 </li>
@@ -263,7 +263,7 @@
                             </li>
                             <li class="sub-info__description-number">
                               当社は、以下の事由が生じた場合には、利用者に事前に通知することなく、一時的に本サービスを中断または停止することがあります。
-                              <ol class="sub-info__description-numbers">
+                              <ol class="sub-info__description-numbers--inside">
                                 <li class="sub-info__description-number">
                                   本サービスまたは関連設備等の保守・メンテナンスが行われる場合
                                 </li>
@@ -323,7 +323,7 @@
                           <ol class="sub-info__description-numbers">
                             <li class="sub-info__description-number">
                               利用者は、本サービスを利用するにあたり、以下の各号に定める行為を行ってはならないものとします。
-                              <ol class="sub-info__description-numbers">
+                              <ol class="sub-info__description-numbers--inside">
                                 <li class="sub-info__description-number">
                                   犯罪行為に結びつく行為。
                                 </li>
@@ -404,13 +404,13 @@
                     <dl class="sub-info__items">
                       <div class="sub-info__item">
                         <dt class="sub-info__term">
-                          第第11条（本サービスについての免責）
+                          第11条（本サービスについての免責）
                         </dt>
                         <dd class="sub-info__description">
                           <ol class="sub-info__description-numbers">
                             <li class="sub-info__description-number">
                               当社は、利用者の本サービスの利用にあたり、第7条第4項、第8条第3項及び以下各号に掲げる事項について、免責されるものとします。
-                              <ol class="sub-info__description-numbers">
+                              <ol class="sub-info__description-numbers--inside">
                                 <li class="sub-info__description-number">
                                   当社は、アプリデータが正確に保存されることを保証いたしません。また、利用者のアクセスコードの失効・喪失についても保証いたしません。
                                 </li>
@@ -495,7 +495,7 @@
                       <div class="sub-info__item">
                         <dt class="sub-info__term">第14条（合意管轄）</dt>
                         <dd class="sub-info__description">
-                          本サービスに起因する当社と利用者間の紛争については、東京地方裁判所をもって第一審の専属的合意管轄裁判所とします。
+                          本サービスに起因する当社と利用者間の紛争については、東京地方裁判所をもって第一審の専属的合意管轄裁判所とします。<br />
                           本規約は、令和6年3月1日から実施します。
                         </dd>
                       </div>
@@ -507,9 +507,9 @@
           </div>
         </div>
       </section>
-      <section class="sup-faq l-sub-faq">
+      <section id="faq" class="sup-faq l-sub-faq">
         <h2 class="sup-faq__head section-head">よくある質問</h2>
-        <div class="sup-faq__inner">
+        <div class="sup-faq__inner inner">
           <ul class="faq-list">
             <li class="faq-list__item">
               <p class="faq-list__item-question js-faq-question is-open">
@@ -582,7 +582,7 @@
               </p>
               <div class="faq-list__item-answer">
                 <p class="faq-list__item-text">
-                  利用期間を過ぎてのご利用はできません。※兄弟姉妹でご利用なさりたいときは、お問い合わせください。
+                  利用期間を過ぎてのご利用はできません。<br />※兄弟姉妹でご利用なさりたいときは、お問い合わせください。
                 </p>
               </div>
             </li>
@@ -638,19 +638,26 @@
         </div>
       </section>
       <div class="sub-contact l-sub-contact">
-        <div class="sub-contact__inner">
+        <div class="sub-contact__inner inner">
           <div class="sub-contact__content">
-            <div class="sub-contact__buttons">
-              <div class="sub-contact__button">
-                <a href="" class="support-button--green"
-                  ><span>おん達問い合わせフォーム</span></a
-                >
-              </div>
+            <p class="sub-contact__head">解決しない場合…</p>
+            <p class="sub-contact__text">
+              下記フォームよりお問い合わせください。
+            </p>
+            <div class="sub-contact__button">
+              <a href="" class="support-button--green"
+                ><span>おん達問い合わせフォーム</span></a
+              >
             </div>
+            <p class="sub-contact__text--small">
+              ※スマートフォンの機種・OSのバージョンを<br
+                class="u-mobile"
+              />添えていただくとスムーズです。
+            </p>
             <div class="sub-contact__dl dl-block">
               <div class="dl-block__img">
                 <img
-                  src="./assets/images/dl-img@2x.webp"
+                  src="./assets/images/dl-img.svg"
                   alt="おん達｜文理のはつおん上達アプリ"
                   width=""
                   height=""
@@ -693,21 +700,21 @@
           </div>
         </div>
       </div>
-      <div class="info">
-        <div class="info__inner">
-          <div class="info__nav">
-            <ul class="info__nav-list">
-              <li class="info__nav-item">
-                <a href="">おん達のここがすごい</a>
+      <div class="sub-footer-nav l-sub-footer-nav">
+        <div class="sub-footer-nav__inner">
+          <div class="info-nav">
+            <ul class="info-nav__list">
+              <li class="info-nav__item">
+                <a href="./#intro">おん達のここがすごい</a>
               </li>
-              <li class="info__nav-item">
-                <a href="">アプリの使い方</a>
+              <li class="info-nav__item">
+                <a href="./#usage">アプリの使い方</a>
               </li>
-              <li class="info__nav-item">
-                <a href="">利用規約</a>
+              <li class="info-nav__item">
+                <a href="#info">利用規約</a>
               </li>
-              <li class="info__nav-item">
-                <a href="">よくある質問</a>
+              <li class="info-nav__item">
+                <a href="#faq">よくある質問</a>
               </li>
             </ul>
           </div>
