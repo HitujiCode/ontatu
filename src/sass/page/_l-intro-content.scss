@@ -5,6 +5,6 @@
   margin-inline: auto;
   width: calc(308 / 390 * 100%);
   @include mq("md") {
-    padding: rem(24) 0;
+    padding: rem(24) 0 rem(40);
   }
 }

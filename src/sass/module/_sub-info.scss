@@ -16,14 +16,13 @@
 }
 
 .sub-info__wrapper {
-  margin-top: rem(40);
+  padding: rem(30) 0 rem(40);
 }
 
 .sub-info__content {
-  padding: rem(16) rem(10);
+  padding: rem(12) rem(16);
   border: 1px solid $gray;
-  height: rem(198);
-  // height: auto;
+  height: rem(194);
   overflow: hidden;
   overflow-y: scroll;
   font-family: $third-font;
@@ -36,12 +35,13 @@
   text-align: right;
   font-size: rem(17);
   font-weight: $regular;
+  line-height: 1;
 }
 
 .sub-info__title {
-  margin-top: rem(8);
+  margin-top: rem(12);
   text-align: center;
-  font-size: rem(18);
+  font-size: rem(17);
   font-weight: $medium;
 }
 
@@ -50,24 +50,35 @@
 }
 
 .sub-info__items {
-  margin-top: rem(20);
-  font-weight: $medium;
-  line-height: calc(22 / 12);
+  margin-top: rem(25);
 }
 
 .sub-info__item {
 }
 
 .sub-info__term {
-  padding-left: rem(4);
+  font-size: rem(18);
+  font-weight: $medium;
+  line-height: calc(22 / 12);
 }
 
 .sub-info__description {
   word-break: break-all;
+  padding-left: rem(4);
+  text-align: justify;
+  font-size: rem(17);
+  font-weight: $regular;
+  line-height: 1.5;
 }
 
 .sub-info__description-numbers {
+  padding-left: rem(18);
   list-style: auto;
-  padding: 0 rem(16);
+}
+
+.sub-info__description-number {
   text-align: justify;
+  font-size: rem(17);
+  font-weight: $regular;
+  line-height: 1.5;
 }

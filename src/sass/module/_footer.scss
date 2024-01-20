@@ -16,7 +16,8 @@
 .footer__copyright {
   border-top: 1px solid $gray;
   text-align: center;
-  padding: rem(12) 0 rem(20);
+  padding: rem(11) 0 rem(12);
+  line-height: 1;
 }
 
 .footer__copyright small {
@@ -24,4 +25,7 @@
   font-family: $second-font;
   font-weight: $regular;
   color: $darkgray;
+  @include mq("md") {
+    font-size: 12px;
+  }
 }

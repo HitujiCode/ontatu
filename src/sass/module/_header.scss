@@ -9,6 +9,7 @@
   background-color: $white;
   border-bottom: 1px solid $darkgray;
   height: rem(100);
+  text-align: center;
 }
 
 .header__inner {
@@ -17,10 +18,10 @@
   padding: 0 rem(16);
   display: inline-flex;
   align-items: center;
-  justify-content: center;
+  // justify-content: center;
+  // margin-inline: auto;
   @include mq("md") {
-    margin-inline: auto;
-    max-width: rem(1000);
+    max-width: rem(1032);
   }
 }
 

@@ -7,7 +7,7 @@
 .faq-list__item {
   border: 2px solid $orange;
   border-radius: rem(12);
-  padding: rem(24);
+  padding: rem(20) rem(24);
 }
 
 .faq-list__item:not(:first-child) {
@@ -44,8 +44,8 @@
   background: $orange;
   transition: 0.3s;
   @include mq(md) {
-    top: rem(24);
-    width: rem(20);
+    // top: rem(24);
+    // width: rem(20);
   }
 }
 
@@ -58,9 +58,9 @@
 }
 
 .faq-list__item-answer {
-  margin-top: rem(10);
+  margin-top: rem(8);
   display: none;
-  padding-top: rem(8);
+  // padding-top: rem(8);
   border-top: 1px solid $orange;
   @include mq(md) {
     padding: rem(20) rem(40) rem(15) rem(80);
@@ -78,6 +78,7 @@
 }
 
 .faq-list__item-text {
+  margin-top: rem(10);
   // text-align: justify;
 }
 

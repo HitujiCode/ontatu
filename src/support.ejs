@@ -38,48 +38,51 @@
     <%- include('ejs/header'); %>
     <main class="l-main">
       <section class="mv">
-        <div class="mv__inner">
-          <div class="mv__content">
-            <h2 class="mv__title">小学教科書ワーク英語　無料付録アプリ</h2>
-            <div class="mv__title-wrap">
-              <div class="mv__title-img">
-                <img
-                  src="./assets/images/mv-title.svg"
-                  alt="文理のはつおん上達アプリ｜おん達"
-                  width=""
-                  height=""
-                />
+        <div class="mv__inner inner">
+          <div class="mv__wrapper">
+            <div class="mv__content">
+              <h2 class="mv__title">小学教科書ワーク英語　無料付録アプリ</h2>
+              <div class="mv__title-wrap">
+                <div class="mv__title-img">
+                  <img
+                    src="./assets/images/mv-title.svg"
+                    alt="文理のはつおん上達アプリ｜おん達"
+                    width=""
+                    height=""
+                  />
+                </div>
+                <div class="mv__risukero">
+                  <img
+                    src="./assets/images/mv-risukero.svg"
+                    alt="リスとカエルのイラスト"
+                    width=""
+                    height=""
+                  />
+                </div>
               </div>
-              <div class="mv__risukero">
-                <img
-                  src="./assets/images/mv-risukero.svg"
-                  alt="リスとカエルのイラスト"
-                  width=""
-                  height=""
-                />
-              </div>
-            </div>
-            <p class="mv__read">
-              英語の発音をAIが採点！<br class="u-mobile" />
-              発音がどんどん上手に！
-            </p>
-            <div class="mv__bottom-wrap">
-              <div class="mv__img">
-                <img
-                  src="./assets/images/mv-img@2x.webp"
-                  alt="小学教科書ワーク｜英語"
-                  width=""
-                  height=""
-                />
-              </div>
-              <div class="mv__text-wrap">
-                <p class="mv__text">
-                  『小学教科書ワーク 英語』の<br /><span class="mv__keyword"
-                    >わくわく英語カード</span
-                  >と<span class="mv__keyword--large"
-                    >「重要表現まるっと整理」</span
-                  ><br />に対応しています
-                </p>
+              <p class="mv__read">
+                英語の発音をAIが採点！<br class="u-mobile" />
+                発音がどんどん上手に！
+              </p>
+              <div class="mv__bottom-wrap">
+                <div class="mv__img">
+                  <img
+                    src="./assets/images/mv-img@2x.webp"
+                    alt="小学教科書ワーク｜英語"
+                    width=""
+                    height=""
+                  />
+                </div>
+                <div class="mv__text-wrap">
+                  <p class="mv__text">
+                    『小学教科書ワーク 英語』の<br /><span class="mv__keyword"
+                      >わくわく英語カード</span
+                    ><span class="test">と</span
+                    ><span class="mv__keyword--large"
+                      >「重要表現まるっと整理」</span
+                    ><br />に対応しています
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -514,7 +517,7 @@
               </p>
               <div class="faq-list__item-answer is-open">
                 <p class="faq-list__item-text">
-                  トップ画面のタイトルの下の表紙画像かロックが外れていれば、その画像をタップていただくことでログインできます。
+                  トップ画面のタイトルの下の表紙画像からロックが外れていれば、その画像をタップしていただくことでログインできます。
                 </p>
                 <div class="faq-list__item-img">
                   <img
@@ -535,73 +538,101 @@
               <p class="faq-list__item-question js-faq-question">
                 発音はどのような基準で採点されていますか？
               </p>
-              <p class="faq-list__item-answer">
-                単語や文章の音読、英語での面接の録音データとサインウェーブ社独自の採点基準をもとに、人によって採点したデータをAIが学習して、採点を行っています。
-              </p>
+              <div class="faq-list__item-answer">
+                <p class="faq-list__item-text">
+                  単語や文章の音読、英語での面接の録音データとサインウェーブ社独自の採点基準をもとに、人によって採点したデータをAIが学習して、採点を行っています。
+                </p>
+              </div>
             </li>
             <li class="faq-list__item">
               <p class="faq-list__item-question js-faq-question">
                 「流暢度」、「発音」、「完成度」とは何を表していますか？
               </p>
-              <p class="faq-list__item-answer">
-                「流暢度」はどれくらいなめらかに話せているか、「発音」はどれくらい正確に発音できているか、「完成度」は読み漏れてしまった単語はないかという観点での点数を表しています。
-              </p>
+              <div class="faq-list__item-answer">
+                <p class="faq-list__item-text">
+                  「流暢度」はどれくらいなめらかに話せているか、「発音」はどれくらい正確に発音できているか、「完成度」は読み漏れてしまった単語はないかという観点での点数を表しています。
+                </p>
+              </div>
             </li>
             <li class="faq-list__item">
               <p class="faq-list__item-question js-faq-question">
                 アクセスコードはどこに書いてありますか？
               </p>
-              <p class="faq-list__item-answer">
-                アクセスコードは「小学教科書ワーク
-                英語」の２ページ、および「表現まるっと整理」の最初のページに記載されています。
-                ※わくわく英語ドリルに付属する体験版のアクセスコードは、同ドリルの１ページに記載されています。
-              </p>
+              <div class="faq-list__item-answer">
+                <p class="faq-list__item-text">
+                  アクセスコードは「小学教科書ワーク　英語」の２ページ、および「チャレンジ！
+                  スピーキング」の最初のページに記載されています。<br />
+                  ※わくわく英語ドリルに付属する体験版のアクセスコードは、同ドリルの１ページに記載されています。
+                </p>
+              </div>
             </li>
             <li class="faq-list__item">
               <p class="faq-list__item-question js-faq-question">
                 アプリの利用に料金はかかりますか？
               </p>
-              <p class="faq-list__item-answer">
-                アプリの利用に料金はかかりません。ご使用の端末の通信会社の通信料は別途かかります。
+              <div class="faq-list__item-answer">
+                <p class="faq-list__item-text">
+                  アプリの利用に料金はかかりません。ご使用の端末の通信会社の通信料は別途かかります。
+                </p>
+              </div>
+            </li>
+            <li class="faq-list__item">
+              <p class="faq-list__item-question js-faq-question">
+                アプリはどれくらいの期間利用できますか？　また、いつから利用開始となりますか？
               </p>
+              <div class="faq-list__item-answer">
+                <p class="faq-list__item-text">
+                  利用期間を過ぎてのご利用はできません。※兄弟姉妹でご利用なさりたいときは、お問い合わせください。
+                </p>
+              </div>
             </li>
             <li class="faq-list__item">
               <p class="faq-list__item-question js-faq-question">
                 お手本の音声は合成された音声ですか？
               </p>
-              <p class="faq-list__item-answer">
-                お手本の音声は合成音声ではありません。ネイティブスピーカーであるプロのナレーターによるものです。
-              </p>
+              <div class="faq-list__item-answer">
+                <p class="faq-list__item-text">
+                  お手本の音声は合成音声ではありません。ネイティブスピーカーであるプロのナレーターによるものです。
+                </p>
+              </div>
             </li>
             <li class="faq-list__item">
               <p class="faq-list__item-question js-faq-question">
                 内容は教科書に合っていますか？
               </p>
-              <p class="faq-list__item-answer">
-                特定の教科書に合わせて作成されてはいません。各教科書の内容を調べ、なるべく多くの読者様に合うように作成しています。
-              </p>
+              <div class="faq-list__item-answer">
+                <p class="faq-list__item-text">
+                  特定の教科書に合わせて作成されてはいません。各教科書の内容を調べ、なるべく多くの読者様に合うように作成しています。
+                </p>
+              </div>
             </li>
             <li class="faq-list__item">
               <p class="faq-list__item-question js-faq-question">
                 １つのアプリで同じ学年を２つ以上登録できますか？
               </p>
-              <p class="faq-list__item-answer">
-                できません。各学年１つまで登録できます。
-              </p>
+              <div class="faq-list__item-answer">
+                <p class="faq-list__item-text">
+                  できません。各学年１つまで登録できます。
+                </p>
+              </div>
             </li>
             <li class="faq-list__item">
               <p class="faq-list__item-question js-faq-question">
                 スマートフォン等の端末を変えた場合、学習履歴は引き継がれますか？
               </p>
-              <p class="faq-list__item-answer">引き継がれません。</p>
+              <div class="faq-list__item-answer">
+                <p class="faq-list__item-text">引き継がれません。</p>
+              </div>
             </li>
             <li class="faq-list__item">
               <p class="faq-list__item-question js-faq-question">
                 リスとカエルのキャラクターに名前はありますか？
               </p>
-              <p class="faq-list__item-answer">
-                リスに似ているキャラクターは「りっすん」、カエルに似ているキャラクターは「すぴっけろ」という名前です。
-              </p>
+              <div class="faq-list__item-answer">
+                <p class="faq-list__item-text">
+                  リスに似ているキャラクターは「りっすん」、カエルに似ているキャラクターは「すぴっけろ」という名前です。
+                </p>
+              </div>
             </li>
           </ul>
         </div>
