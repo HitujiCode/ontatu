@@ -34,7 +34,6 @@
 }
 
 .dl-buttons__text {
-  margin-top: rem(6);
   font-size: rem(12);
   font-weight: $regular;
   line-height: 1;
@@ -47,6 +46,5 @@
 
 .dl-buttons--small .dl-buttons__text {
   @extend .dl-buttons__text;
-  margin-top: rem(4);
   font-size: rem(11);
 }

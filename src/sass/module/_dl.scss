@@ -8,15 +8,20 @@
 
 .dl__content {
   max-width: rem(560);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-inline: auto;
 }
 
 .dl__info-wrap {
-  padding: rem(14) rem(15);
+  padding: rem(13) rem(15);
   border: 3px solid $orange;
   border-radius: rem(10);
   display: flex;
   position: relative;
+  max-width: rem(358);
+  width: 100%;
 }
 
 .dl__info-text {
@@ -37,10 +42,10 @@
 }
 
 .dl__img {
-  width: rem(110);
+  width: rem(124);
   position: absolute;
-  top: 0;
-  right: 0;
+  top: rem(-18);
+  right: rem(-8);
 }
 
 .dl__img img {
@@ -54,8 +59,7 @@
   font-size: rem(20);
   font-weight: $medium;
   line-height: calc(32 / 20);
-  margin-top: rem(32);
-  text-align: center;
+  margin-top: rem(30);
   @include mq("md") {
     margin-top: rem(36);
   }
@@ -66,9 +70,9 @@
 }
 
 .dl__risukero {
-  margin-top: rem(16);
-  margin-inline: auto;
-  width: rem(265);
+  margin-top: rem(20);
+  // margin-inline: auto;
+  max-width: rem(265);
   @include mq("md") {
     margin-top: rem(20);
   }

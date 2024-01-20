@@ -34,55 +34,58 @@
     <%- include('ejs/header'); %>
     <main class="l-main">
       <section class="mv">
-        <div class="mv__inner">
-          <div class="mv__content">
-            <h2 class="mv__title">小学教科書ワーク英語　無料付録アプリ</h2>
-            <div class="mv__title-wrap">
-              <div class="mv__title-img">
-                <img
-                  src="./assets/images/mv-title.svg"
-                  alt="文理のはつおん上達アプリ｜おん達"
-                  width=""
-                  height=""
-                />
+        <div class="mv__inner inner">
+          <div class="mv__wrapper">
+            <div class="mv__content">
+              <h2 class="mv__title">小学教科書ワーク英語　無料付録アプリ</h2>
+              <div class="mv__title-wrap">
+                <div class="mv__title-img">
+                  <img
+                    src="./assets/images/mv-title.svg"
+                    alt="文理のはつおん上達アプリ｜おん達"
+                    width=""
+                    height=""
+                  />
+                </div>
+                <div class="mv__risukero">
+                  <img
+                    src="./assets/images/mv-risukero.svg"
+                    alt="リスとカエルのイラスト"
+                    width=""
+                    height=""
+                  />
+                </div>
               </div>
-              <div class="mv__risukero">
-                <img
-                  src="./assets/images/mv-risukero.svg"
-                  alt="リスとカエルのイラスト"
-                  width=""
-                  height=""
-                />
-              </div>
-            </div>
-            <p class="mv__read">
-              英語の発音をAIが採点！<br class="u-mobile" />
-              発音がどんどん上手に！
-            </p>
-            <div class="mv__bottom-wrap">
-              <div class="mv__img">
-                <img
-                  src="./assets/images/mv-img@2x.webp"
-                  alt="小学教科書ワーク｜英語"
-                  width=""
-                  height=""
-                />
-              </div>
-              <div class="mv__text-wrap">
-                <p class="mv__text">
-                  『小学教科書ワーク 英語』の<br /><span class="mv__keyword"
-                    >わくわく英語カード</span
-                  >と<span class="mv__keyword--large"
-                    >「重要表現まるっと整理」</span
-                  ><br />に対応しています
-                </p>
+              <p class="mv__read">
+                英語の発音をAIが採点！<br class="u-mobile" />
+                発音がどんどん上手に！
+              </p>
+              <div class="mv__bottom-wrap">
+                <div class="mv__img">
+                  <img
+                    src="./assets/images/mv-img@2x.webp"
+                    alt="小学教科書ワーク｜英語"
+                    width=""
+                    height=""
+                  />
+                </div>
+                <div class="mv__text-wrap">
+                  <p class="mv__text">
+                    『小学教科書ワーク 英語』の<br /><span class="mv__keyword"
+                      >わくわく英語カード</span
+                    ><span class="test">と</span
+                    ><span class="mv__keyword--large"
+                      >「重要表現まるっと整理」</span
+                    ><br />に対応しています
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
       <section class="dl l-dl">
-        <div class="dl__inner">
+        <div class="dl__inner inner">
           <div class="dl__content">
             <div class="dl__info-wrap">
               <div class="dl__info">
@@ -113,51 +116,52 @@
             <div class="dl__buttons dl-buttons">
               <div class="dl-buttons__button">
                 <a
-                  href=""
+                  href="https://apps.apple.com/jp/app/id1498426803"
                   class="dl-buttons__app"
                   target="_blank"
                   rel="noopener noreferrer"
                   ><img
                     src="./assets/images/dl-app@2x.webp"
                     alt="AppStoreからダウンロード"
-                    width=""
-                    height=""
+                    width="152"
+                    height="56"
                     loading="lazy"
                 /></a>
                 <p class="dl-buttons__text">iPhone/iPadはこちらから</p>
               </div>
               <div class="dl-buttons__button">
                 <a
-                  href=""
+                  href="https://play.google.com/store/apps/details?id=jp.co.bunri.ontatsu.en.android&hl=ja
+                  "
                   class="dl-buttons__google"
                   target="_blank"
                   rel="noopener noreferrer"
                   ><img
                     src="./assets/images/dl-google@2x.webp"
                     alt="GooglePlayで手に入れよう"
-                    width=""
-                    height=""
+                    width="189"
+                    height="56"
                     loading="lazy"
                 /></a>
                 <p class="dl-buttons__text">Androidスマホはこちらから</p>
               </div>
             </div>
-          </div>
-          <div class="dl__risukero">
-            <img
-              src="./assets/images/risukero1.svg"
-              alt="リスとカエルのイラスト"
-              width=""
-              height=""
-              loading="lazy"
-            />
+            <div class="dl__risukero">
+              <img
+                src="./assets/images/risukero1.svg"
+                alt="リスとカエルのイラスト"
+                width=""
+                height=""
+                loading="lazy"
+              />
+            </div>
           </div>
         </div>
       </section>
-      <section class="intro l-intro">
+      <section id="intro" class="intro">
         <h2 class="intro__head section-head">おん達のここがすごい！</h2>
         <div class="intro__inner">
-          <div class="intro__content">
+          <div class="intro__content l-intro-content">
             <div class="intro__img">
               <img
                 src="./assets/images/intro_1@2x.webp"
@@ -197,9 +201,9 @@
           </div>
         </div>
       </section>
-      <section class="usage l-usage">
+      <section id="usage" class="usage">
         <h2 class="usage__head section-head">アプリの使い方</h2>
-        <div class="usage__inner">
+        <div class="usage__inner inner">
           <div class="tab">
             <ul class="tab__head">
               <li
@@ -222,24 +226,34 @@
                   <div class="tab__menu-wrap">
                     <ul class="tab__menu">
                       <li class="tab__menu-item">
-                        <a href="#">初めて使うとき</a>
+                        <a href="#ios01">初めて使うとき</a>
                       </li>
-                      <li class="tab__menu-item"><a href="#">たんご</a></li>
-                      <li class="tab__menu-item"><a href="#">かいわ</a></li>
-                      <li class="tab__menu-item"><a href="#">とっくん</a></li>
                       <li class="tab__menu-item">
-                        <a href="#">学年のきりかえ</a>
+                        <a href="#ios02">たんご</a>
                       </li>
-                      <li class="tab__menu-item"><a href="#">履歴の削除</a></li>
+                      <li class="tab__menu-item">
+                        <a href="#ios03">かいわ</a>
+                      </li>
+                      <li class="tab__menu-item">
+                        <a href="#ios04">とっくん</a>
+                      </li>
+                      <li class="tab__menu-item">
+                        <a href="#ios05">学年のきりかえ</a>
+                      </li>
+                      <li class="tab__menu-item">
+                        <a href="#ios06">履歴の削除</a>
+                      </li>
                     </ul>
-                    <div class="tab__menu-img">
-                      <img
-                        src="./assets/images/risukero2.svg"
-                        alt="リスとカエルのイラスト"
-                        width=""
-                        height=""
-                        loading="lazy"
-                      />
+                    <div class="tab__menu-img-wrap">
+                      <div class="tab__menu-img">
+                        <img
+                          src="./assets/images/risukero2.svg"
+                          alt="リスとカエルのイラスト"
+                          width=""
+                          height=""
+                          loading="lazy"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -330,7 +344,7 @@
                   <li id="ios03" class="tab__flow-section">
                     <h3 class="tab__flow-title">かいわ</h3>
                     <div class="tab__flow-body">
-                      <p class="tab__flow-text-top flow-text">
+                      <p class="tab__flow-text flow-text">
                         教科書ワーク「重要表現まるっと整理」の<br
                           class="u-mobile"
                         />会話表現の練習ができます。
@@ -350,7 +364,7 @@
                       <h4 class="tab__flow-head flow-text--white">
                         チャレンジ
                       </h4>
-                      <div class="tab__flow-img3">
+                      <div class="tab__flow-img4">
                         <img
                           src="./assets/images/ios_5@2x.webp"
                           alt="練習画面の画像"
@@ -401,13 +415,13 @@
                           loading="lazy"
                         />
                       </div>
-                      <p class="tab__flow-text flow-text">
+                      <p class="tab__flow-text--middle1 flow-text">
                         ホームの「学年変更」をタップし、<br />
                         ログイン画面で別のアクセスコードを<br
                           class="u-mobile"
                         />入力します。
                       </p>
-                      <p class="tab__flow-text--middle flow-text">
+                      <p class="tab__flow-text--middle2 flow-text">
                         一度アクセスコードを入力したことがあれば、<br />
                         タイトル下の表紙画像のロックが外れています。<br />取り組みたい学年の表紙画像を<br
                           class="u-mobile"
@@ -447,24 +461,34 @@
                   <div class="tab__menu-wrap">
                     <ul class="tab__menu">
                       <li class="tab__menu-item">
-                        <a href="#">初めて使うとき</a>
+                        <a href="#android01">初めて使うとき</a>
                       </li>
-                      <li class="tab__menu-item"><a href="#">たんご</a></li>
-                      <li class="tab__menu-item"><a href="#">かいわ</a></li>
-                      <li class="tab__menu-item"><a href="#">とっくん</a></li>
                       <li class="tab__menu-item">
-                        <a href="#">学年のきりかえ</a>
+                        <a href="#android02">たんご</a>
                       </li>
-                      <li class="tab__menu-item"><a href="#">履歴の削除</a></li>
+                      <li class="tab__menu-item">
+                        <a href="#android03">かいわ</a>
+                      </li>
+                      <li class="tab__menu-item">
+                        <a href="#android04">とっくん</a>
+                      </li>
+                      <li class="tab__menu-item">
+                        <a href="#android05">学年のきりかえ</a>
+                      </li>
+                      <li class="tab__menu-item">
+                        <a href="#android06">履歴の削除</a>
+                      </li>
                     </ul>
-                    <div class="tab__menu-img">
-                      <img
-                        src="./assets/images/risukero2.svg"
-                        alt="リスとカエルのイラスト"
-                        width=""
-                        height=""
-                        loading="lazy"
-                      />
+                    <div class="tab__menu-img-wrap">
+                      <div class="tab__menu-img">
+                        <img
+                          src="./assets/images/risukero2.svg"
+                          alt="リスとカエルのイラスト"
+                          width=""
+                          height=""
+                          loading="lazy"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -626,11 +650,11 @@
                           loading="lazy"
                         />
                       </div>
-                      <p class="tab__flow-text flow-text">
+                      <p class="tab__flow-text--middle1 flow-text">
                         ホームの「学年変更」をタップし、<br />
                         ログイン画面で別のアクセスコードを<br />入力します。
                       </p>
-                      <p class="tab__flow-text--middle flow-text">
+                      <p class="tab__flow-text--middle2 flow-text">
                         一度アクセスコードを入力したことがあれば、<br />
                         タイトル下の表紙画像のロックが外れています。<br />取り組みたい学年の表紙画像を<br />
                         タップしてください。
@@ -667,53 +691,58 @@
         </div>
       </section>
       <div class="support l-support">
-        <div class="support__inner">
+        <div class="support__inner inner">
           <div class="support__content">
             <div class="support__buttons">
               <div class="support__button">
-                <a href="" class="support-button"><span>利用規約</span></a>
+                <a href="./support.html/#sub-info" class="support-button"
+                  ><span>利用規約</span></a
+                >
               </div>
               <div class="support__button">
-                <a href="" class="support-button"><span>よくある質問</span></a>
+                <a href="./support.html/#sub-faq" class="support-button"
+                  ><span>よくある質問</span></a
+                >
               </div>
             </div>
-            <div class="support__dl">
-              <div class="support__dl-img">
+            <div class="support__dl dl-block">
+              <div class="dl-block__img">
                 <img
-                  src="./assets/images/dl-img@2x.webp"
+                  src="./assets/images/dl-img.svg"
                   alt="おん達｜文理のはつおん上達アプリ"
                   width=""
                   height=""
                   loading="lazy"
                 />
               </div>
-              <div class="support__dl-buttons dl-buttons--small">
+              <div class="dl-block__buttons dl-buttons--small">
                 <div class="dl-buttons__button">
                   <a
-                    href=""
+                    href="https://apps.apple.com/jp/app/id1498426803"
                     class="dl-buttons__app"
                     target="_blank"
                     rel="noopener noreferrer"
                     ><img
                       src="./assets/images/dl-app@2x.webp"
                       alt="AppStoreからダウンロード"
-                      width=""
-                      height=""
+                      width="152"
+                      height="56"
                       loading="lazy"
                   /></a>
                   <p class="dl-buttons__text">iPhone/iPadはこちらから</p>
                 </div>
                 <div class="dl-buttons__button">
                   <a
-                    href=""
+                    href="https://play.google.com/store/apps/details?id=jp.co.bunri.ontatsu.en.android&hl=ja
+                    "
                     class="dl-buttons__google"
                     target="_blank"
                     rel="noopener noreferrer"
                     ><img
                       src="./assets/images/dl-google@2x.webp"
                       alt="GooglePlayで手に入れよう"
-                      width=""
-                      height=""
+                      width="189"
+                      height="56"
                       loading="lazy"
                   /></a>
                   <p class="dl-buttons__text">Androidスマホはこちらから</p>
@@ -723,8 +752,8 @@
           </div>
         </div>
       </div>
-      <div class="info">
-        <div class="info__inner">
+      <div class="info l-info">
+        <div class="info__inner inner">
           <div class="info__content">
             <div class="info__info">
               <p class="info__info-head">注意</p>
@@ -743,18 +772,18 @@
               </div>
             </div>
             <div class="info__nav">
-              <ul class="info__nav-list">
-                <li class="info__nav-item">
-                  <a href="">おん達のここがすごい</a>
+              <ul class="info-nav__list">
+                <li class="info-nav__item">
+                  <a href="#intro">おん達のここがすごい</a>
                 </li>
-                <li class="info__nav-item">
-                  <a href="">アプリの使い方</a>
+                <li class="info-nav__item">
+                  <a href="#usage">アプリの使い方</a>
                 </li>
-                <li class="info__nav-item">
-                  <a href="">利用規約</a>
+                <li class="info-nav__item">
+                  <a href="./support.html/#sub-info">利用規約</a>
                 </li>
-                <li class="info__nav-item">
-                  <a href="">よくある質問</a>
+                <li class="info-nav__item">
+                  <a href="./support.html/#sub-faq">よくある質問</a>
                 </li>
               </ul>
             </div>

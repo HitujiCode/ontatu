@@ -1,6 +1,7 @@
 @use "global" as *;
 
 .footer {
+  background-color: $white;
 }
 
 .footer__inner {
@@ -13,14 +14,14 @@
 }
 
 .footer__copyright {
-  margin-top: rem(25);
-  padding: rem(12) 0 rem(13);
   border-top: 1px solid $gray;
   text-align: center;
+  padding: rem(12) 0 rem(20);
 }
 
 .footer__copyright small {
   font-size: rem(12);
+  font-family: $second-font;
   font-weight: $regular;
   color: $darkgray;
 }

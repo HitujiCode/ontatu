@@ -11,22 +11,24 @@
 
 .support__buttons {
   display: grid;
-  gap: rem(24);
+  // flex-direction: column;
+  // align-items: center;
+  gap: rem(30);
+  text-align: center;
   @include mq("md") {
     display: flex;
   }
 }
 
 .support__button {
-  flex: 1;
+  @include mq("md") {
+    flex: 1;
+  }
 }
 
 .support__dl {
-  margin-top: rem(40);
-  border: 3px solid $orange;
-  padding: rem(21);
+  margin-top: rem(46);
   @include mq("md") {
-    max-width: rem(358);
     margin-inline: auto;
   }
 }

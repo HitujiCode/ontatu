@@ -8,16 +8,16 @@
   z-index: 900;
   background-color: $white;
   border-bottom: 1px solid $darkgray;
-  padding: rem(12) 0 rem(11);
-  @include mq("md") {
-    padding: rem(15) 0 rem(14);
-  }
+  height: rem(100);
 }
 
 .header__inner {
+  height: inherit;
+  width: 100%;
   padding: 0 rem(16);
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  justify-content: center;
   @include mq("md") {
     margin-inline: auto;
     max-width: rem(1000);

@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.dl-block {
+  border: 3px solid $orange;
+  padding: rem(21);
+  @include mq("md") {
+    max-width: rem(358);
+  }
+}
+
+.dl-block__img {
+}
+
+.dl-block__img img {
+  aspect-ratio: 309/151;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.dl-block__buttons {
+  margin-top: rem(12);
+}

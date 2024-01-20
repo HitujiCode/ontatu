@@ -20,7 +20,6 @@
 }
 
 .info__info-body {
-  margin-top: rem(6);
   padding: rem(16) 0;
   border-top: 1px solid $gray;
 }
@@ -35,29 +34,5 @@
 }
 
 .info__nav {
-  margin-top: rem(48);
-}
-
-.info__nav-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 0 rem(32);
-}
-
-.info__nav-item {
-  width: fit-content;
-  padding: 0 rem(8);
-  border-left: 1px solid $gray;
-  border-right: 1px solid $gray;
-}
-
-.info__nav-item:not(:first-child) {
-  margin-left: -1px;
-}
-
-.info__nav-item a {
-  font-size: rem(14);
-  font-weight: $medium;
-  line-height: calc(24 / 14);
+  margin-top: rem(30);
 }

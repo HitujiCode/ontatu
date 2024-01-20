@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.l-intro-content {
+  padding: rem(30) 0;
+  margin-inline: auto;
+  width: calc(308 / 390 * 100%);
+  @include mq("md") {
+    padding: rem(24) 0;
+  }
+}
