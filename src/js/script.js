@@ -34,41 +34,47 @@ jQuery(function ($) {
   });
 
   // アンカーリンク
-  // $(document).ready(function () {
-  //   const adjustAnchorOffset = function () {
-  //     const headerHeight = $(".js-header").outerHeight(); // ヘッダーの高さを取得
+  $(document).ready(function () {
+    const fixedHeaderHeight = 100; // 固定ヘッダーの高さ
+    let lastWindowHeight = $(window).height(); // 初期ウィンドウの高さ
 
-  //     $('a[href^="#"]')
-  //       .off("click")
-  //       .on("click", function (e) {
-  //         e.preventDefault();
+    function adjustAnchorOffset() {
+      $('a[href^="#"]')
+        .off("click")
+        .on("click", function (e) {
+          const href = $(this).attr("href");
 
-  //         const targetId = $(this).attr("href");
-  //         const targetElement = $(targetId);
+          if (href.length > 1 && href.startsWith("#")) {
+            e.preventDefault();
 
-  //         if (targetElement.length) {
-  //           const elementPosition = targetElement.offset().top;
-  //           const offsetPosition = elementPosition - headerHeight;
+            const targetElement = $(href);
 
-  //           $("html, body").animate(
-  //             {
-  //               scrollTop: offsetPosition,
-  //             },
-  //             "smooth"
-  //           );
-  //         }
-  //       });
+            if (targetElement.length) {
+              const elementPosition = targetElement.offset().top;
+              const currentWindowHeight = $(window).height();
+              const progressBarHeight = lastWindowHeight - currentWindowHeight;
 
-  // ページロード時にURLのハッシュに基づいてスクロールする処理
-  $(window).on("load", function () {
-    var pageHash = window.location.hash;
-    if (pageHash) {
-      scrollToHash(pageHash);
+              const offsetPosition =
+                elementPosition - fixedHeaderHeight - progressBarHeight;
+
+              $("html, body").animate(
+                {
+                  scrollTop: offsetPosition,
+                },
+                "smooth"
+              );
+
+              lastWindowHeight = currentWindowHeight; // ウィンドウの高さを更新
+            }
+          }
+        });
     }
 
-    // ページ読み込み時とリサイズ時に調整を実行
-    $(window).on("resize", adjustAnchorOffset);
+    // リサイズ時にウィンドウの高さを更新
+    $(window).on("resize scroll", function () {
+      lastWindowHeight = $(window).height();
+    });
 
-    adjustAnchorOffset(); // 初期読み込み時にも実行
+    adjustAnchorOffset(); // 初期読み込み時に実行
   });
 });

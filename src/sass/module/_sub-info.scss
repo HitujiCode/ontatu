@@ -79,7 +79,7 @@
   word-break: break-all;
   padding-left: rem(4);
   text-align: justify;
-  font-size: rem(17);
+  font-size: rem(16);
   font-weight: $medium;
   line-height: 1.5;
   @include mq("md") {
@@ -92,7 +92,7 @@
   padding-left: rem(18);
   list-style: auto;
   @include mq("md") {
-    padding-left: rem(30);
+    padding-left: rem(22);
   }
 }
 
@@ -105,9 +105,17 @@
 
 .sub-info__description-number {
   text-align: justify;
-  font-size: rem(17);
+  font-size: rem(16);
   font-weight: $medium;
   line-height: 1.5;
+  @include mq("md") {
+    font-size: rem(12);
+    line-height: 1.8;
+  }
+}
+
+.sub-info__description-numbers--inside .sub-info__description-number {
+  font-size: rem(16);
   @include mq("md") {
     font-size: rem(12);
     line-height: 1.8;

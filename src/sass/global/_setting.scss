@@ -37,6 +37,14 @@ $padding-sp: 16px;
   src: url("../fonts/MPLUSRounded1c-Bold.woff") format("woff");
 }
 
+@font-face {
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Noto Sans JP";
+  src: url("../fonts/NotoSansJP-Medium.woff") format("woff");
+}
+
 $base-font: "M PLUS Rounded 1c", sans-serif;
 $second-font: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic",
   "Meiryo", sans-serif;

@@ -23,7 +23,7 @@
 
 .support-button span {
   position: relative;
-  padding-right: rem(14);
+  padding: 0 rem(14);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,5 +65,5 @@
 }
 
 .support-button--green span {
-  padding-right: rem(36);
+  padding-left: 0;
 }
