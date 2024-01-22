@@ -1,11 +1,5 @@
 @use "global" as *;
 
-.intro {
-}
-
-.intro__inner {
-}
-
 .intro__content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -16,9 +10,6 @@
     display: flex;
     max-width: rem(628);
   }
-}
-
-.intro__img {
 }
 
 .intro__img img {

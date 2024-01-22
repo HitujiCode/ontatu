@@ -11,9 +11,6 @@
 
 .mv__inner.inner {
   max-width: rem(768);
-  @include mq("md") {
-    // max-width: rem(768);
-  }
 }
 
 .mv__wrapper {
@@ -188,7 +185,7 @@
   padding-right: rem(2);
 }
 
-.test {
+.mv__space {
   display: inline-block;
   padding: 0 0.1em;
 }

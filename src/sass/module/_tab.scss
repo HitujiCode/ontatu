@@ -1,7 +1,5 @@
 @use "global" as *;
 
-.tab {
-}
 
 .tab__head {
   display: flex;
@@ -79,9 +77,6 @@
   color: $limegreen2;
   line-height: 1;
   text-transform: uppercase;
-  @include mq("md") {
-    // font-size: 14px;
-  }
 }
 
 .tab__menu-wrap {
@@ -157,8 +152,6 @@
   object-fit: cover;
 }
 
-.tab__flow {
-}
 
 .tab__flow-section {
   margin-top: rem(40);
@@ -214,7 +207,6 @@
 }
 
 .tab__flow-text {
-  // margin-top: rem(16);
   text-align: center;
 }
 

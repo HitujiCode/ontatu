@@ -1,7 +1,5 @@
 @use "global" as *;
 
-.support {
-}
 
 .support__inner.inner {
   @include mq("md") {
@@ -9,8 +7,6 @@
   }
 }
 
-.support__content {
-}
 
 .support__buttons {
   display: grid;
@@ -34,9 +30,6 @@
     margin-inline: auto;
     margin-top: rem(56);
   }
-}
-
-.support__dl-img {
 }
 
 .support__dl-img img {

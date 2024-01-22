@@ -47,10 +47,6 @@
   height: rem(1);
   background: $orange;
   transition: 0.3s;
-  @include mq(md) {
-    // top: rem(24);
-    // width: rem(20);
-  }
 }
 
 .faq-list__item-question::after {
