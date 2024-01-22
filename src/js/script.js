@@ -1,12 +1,3 @@
-// // ヘッダーの高さを動的に取得
-// function updateHeaderHeight() {
-//   let header = document.getElementsByClassName("js-header");
-//   let headerHeight = header.offsetHeight + "px";
-//   document.documentElement.style.setProperty("--header-height", headerHeight);
-// }
-// window.addEventListener("load", updateHeaderHeight);
-// window.addEventListener("resize", updateHeaderHeight);
-
 jQuery(function ($) {
   // この中であればWordpressでも「$」が使用可能になる
 
@@ -40,5 +31,44 @@ jQuery(function ($) {
     $(this).next().slideToggle();
     $(this).toggleClass("is-open");
     $("js-faq-answer").toggleClass("is-open");
+  });
+
+  // アンカーリンク
+  // $(document).ready(function () {
+  //   const adjustAnchorOffset = function () {
+  //     const headerHeight = $(".js-header").outerHeight(); // ヘッダーの高さを取得
+
+  //     $('a[href^="#"]')
+  //       .off("click")
+  //       .on("click", function (e) {
+  //         e.preventDefault();
+
+  //         const targetId = $(this).attr("href");
+  //         const targetElement = $(targetId);
+
+  //         if (targetElement.length) {
+  //           const elementPosition = targetElement.offset().top;
+  //           const offsetPosition = elementPosition - headerHeight;
+
+  //           $("html, body").animate(
+  //             {
+  //               scrollTop: offsetPosition,
+  //             },
+  //             "smooth"
+  //           );
+  //         }
+  //       });
+
+  // ページロード時にURLのハッシュに基づいてスクロールする処理
+  $(window).on("load", function () {
+    var pageHash = window.location.hash;
+    if (pageHash) {
+      scrollToHash(pageHash);
+    }
+
+    // ページ読み込み時とリサイズ時に調整を実行
+    $(window).on("resize", adjustAnchorOffset);
+
+    adjustAnchorOffset(); // 初期読み込み時にも実行
   });
 });

@@ -5,8 +5,13 @@
   bottom: rem(10);
   right: rem(5);
   z-index: 1000;
+  width: rem(67);
+  height: rem(67);
   @include mq("md") {
-    bottom: rem(40);
-    right: rem(40);
+    right: rem(20);
   }
+}
+
+.totop button {
+  padding: 0;
 }

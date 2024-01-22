@@ -1,10 +1,11 @@
 @use "global" as *;
 
 .mv {
-  padding: rem(116) 0 rem(16);
+  margin-top: rem(100);
+  padding: rem(16) 0;
   background-color: $limegreen;
   @include mq("md") {
-    padding: rem(130) 0 rem(34);
+    padding: rem(30) 0 rem(34);
   }
 }
 
