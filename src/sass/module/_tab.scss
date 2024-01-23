@@ -1,6 +1,5 @@
 @use "global" as *;
 
-
 .tab__head {
   display: flex;
   justify-content: center;
@@ -152,7 +151,6 @@
   object-fit: cover;
 }
 
-
 .tab__flow-section {
   margin-top: rem(40);
 }
@@ -283,6 +281,7 @@
 }
 
 .tab__flow-img6 {
+  margin-top: rem(16);
   max-width: rem(314);
   @include mq("md") {
   }
